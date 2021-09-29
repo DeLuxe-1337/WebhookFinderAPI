@@ -1,6 +1,6 @@
 function Webhook(url) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "https://5d1b-45-147-228-103.ngrok.io/api/WebhookFinder?url=" + url, false);
+    xmlHttp.open("GET", "http://deluxe-api.servehttp.com:8000/api/WebhookFinder?url=" + url, false);
     xmlHttp.send(null);
 
     var result = xmlHttp.responseText;
