@@ -1,6 +1,6 @@
 function Webhook(url) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "https://myaspnet.herokuapp.com/webhookfinder?url=" + url, false);
+    xmlHttp.open("https://myaspnet.herokuapp.com/webhookfinder?url=" + url, false);
     xmlHttp.send(null);
 
     var result = xmlHttp.responseText;
